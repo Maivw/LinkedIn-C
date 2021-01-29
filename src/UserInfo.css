@@ -1,0 +1,87 @@
+
+.MuiPaper-root{
+  padding: 10px !important;
+  width: 50rem !important
+
+}
+.userInfo__bottom-header {
+  color:#0074b1;
+  margin: 10px 50px;
+}
+.info__details {
+  background-color: white;
+  padding: 5px;
+  border-bottom: 0.1px solid lightgray;
+}
+.info__details:hover {
+  background-color:whitesmoke;
+}
+.infor__detail {
+  color:#0074b1;
+  margin-left: 10px;
+  padding: 10px;
+  font-size: 15px;
+}
+
+.userInfo__modal-button {
+  border: none;
+  background-color: white;
+  width: 50px;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.userInfo__modal-button:hover {
+  background-color:whitesmoke;
+}
+.userInfo__modal-name {
+  font-size: 20px;
+  padding: 10px 0;
+}
+
+.userInfo__modal-subTitle {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.userInfo__top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-bottom: 0;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  padding-bottom: 10px;
+  background-color: white ;
+}
+
+.userInfo {
+  flex: 0.8;
+  padding-right: 30px;
+  height: 100vh;
+  padding-bottom: 20px;
+  background-color: white;
+  
+}
+.userInfo__topInner {
+  align-self: flex-start;
+  margin-left: 50px;
+  margin-top: -60px;
+}
+.userInfo__top > img {
+  margin-bottom: -20px;
+  width: 100%;
+  height: 300px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  object-fit: cover ;
+
+}
+.userInfo__topInner > h4 {
+  color: gray;
+  font-size: 12px;
+}
+.userInfo__top > h2 {
+  font-size: 18px;
+}

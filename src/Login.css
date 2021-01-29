@@ -1,0 +1,73 @@
+.login {
+  display: grid;
+  place-items: center;
+  margin: 0 auto;
+  padding: 100px 0;
+}
+
+.login > img {
+  object-fit: contain;
+  height: 70px;
+  margin: 20px 0;
+}
+
+.login > form {
+   display: flex;
+   flex-direction: column;
+  
+}
+.login > form > input {
+  width: 350px;
+  height: 50px;
+  font-size: 20px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  padding-left: 10px;
+  border: 0.1px solid lightgray;
+  outline:none
+}
+
+.login__button {
+  width: 365px;
+  height: 50px;
+  font-size: 20px;
+  color: white;
+  background-color: #0074b1;
+  border-radius: 5px;
+  outline: none;
+  border:1px solid lightgray;
+}
+
+.login__button:hover {
+  background-color: white;
+  color: #0074b1;
+  transition: all 0.5s linear;
+}
+.login__register {
+  color:#0177b7;
+  cursor: pointer;
+
+}
+
+.login > p {
+  margin-top: 20px;
+  margin-left: 5px;
+}
+
+.login__googleButton {
+  width: 365px;
+  height: 50px;
+  font-size: 20px;
+  background-color: white;
+  color: #0074b1;
+  border-radius: 5px;
+  outline: none;
+  margin-top: 10px;
+  border:1px solid lightgray;
+}
+
+.login__googleButton:hover {
+  background-color: #0074b1;
+  color: white;
+  transition: all 0.5s linear;
+}

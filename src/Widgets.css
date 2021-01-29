@@ -1,0 +1,41 @@
+.widgets {
+  flex: 0.2;
+  top: 80px;
+  position: sticky;
+  background-color: white;
+  border-radius: 10px;
+  padding-bottom: 10px;
+  height: fit-content;
+  border: 1px solid lightgray;
+
+}
+
+.widgets__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.widgets__article {
+  display: flex;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.widgets__article :hover {
+  background-color:whitesmoke;
+}
+.widgets__articleLeft {
+  color: #0177b7;
+  margin-right: 5px;
+
+}
+
+.widgets__articleRight > h4 {
+  font-size: 14px;
+}
+.widgets__articleRight > p {
+  font-size: 12px;
+  color:gray;
+}

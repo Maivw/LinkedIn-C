@@ -1,0 +1,47 @@
+.createPost__input {
+  border: 1px solid lightgray;
+  border-radius: 10px;
+  display: flex;
+  padding: 30px;
+  padding-left: 15px;
+  color: gray; 
+  width: 500px;
+  height: 20px;
+  margin-top: 20px;
+  outline: none;
+}
+.createPost__title-post {
+  width: 365px;
+  height: 50px;
+  font-size: 20px;
+  color: white;
+  background-color: #0074b1;
+  border-radius: 5px;
+  outline: none;
+  border:1px solid lightgray;
+}
+.createPost__title-post:hover {
+  background-color: white;
+  color: #0074b1;
+  transition: all 0.5s linear;
+}
+.createPost__title-cancel {
+  width: 365px;
+  height: 50px;
+  font-size: 20px;
+  background-color: white;
+  color: #0074b1;
+  border-radius: 5px;
+  outline: none;
+  border:1px solid lightgray;
+}
+
+.createPost__title-cancel:hover {
+  color: white;
+  background-color: #0074b1;
+  transition: all 0.5s linear;
+}
+
+.createPost__title {
+  padding: 15px;
+}
