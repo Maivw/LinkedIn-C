@@ -9,7 +9,7 @@ function Login() {
 	const dispatch = useDispatch();
 	const [name, setName] = useState("");
 	const [password, setPassword] = useState("password");
-	const [email, setEmail] = useState("demo1@gmail.com");
+	const [email, setEmail] = useState("maitranvw@gmail.com");
 	const [photoUrl, setPhotoUrl] = useState("");
 
 	const handleLogin = (e) => {
@@ -61,7 +61,7 @@ function Login() {
 	return (
 		<div className="login">
 			<img
-				src="https://logos-world.net/wp-content/uploads/2020/04/Linkedin-Logo.png"
+				src="https://res.cloudinary.com/maivw/image/upload/v1611949389/LinkedIn_Logo_2013.svg_2_dcyauc.png"
 				alt="logo"
 			/>
 			<form>

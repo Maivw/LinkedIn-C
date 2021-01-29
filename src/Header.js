@@ -25,7 +25,7 @@ function Header() {
 		<div className="header">
 			<div className="header__left">
 				<img
-					src="https://img.flaticon.com/icons/png/512/174/174857.png?size=1200x630f&pad=10,10,10,10&ext=png&bg=FFFFFFFF"
+					src="https://res.cloudinary.com/maivw/image/upload/v1611949586/LinkedIn_Logo_2013.svg_2_qoqphu.png"
 					alt="logo"
 					onClick={() => history.push("/")}
 				/>
