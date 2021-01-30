@@ -21,13 +21,18 @@
   overflow-wrap: anywhere;
   
 }
-.post__imageWrapper {
+.post__imageWrapper, .post__videoWrapper {
   border-radius: 10px;
   display: flex;
   justify-content: center;
   margin: 10px 0;
   background-color: #f3f2ef;
 
+}
+.post__videoWrapper > video {
+  outline: none;
+  padding: 25px;
+  margin:auto 0;
 }
 
 .post__button {

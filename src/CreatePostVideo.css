@@ -1,0 +1,46 @@
+.createVideo__input {
+  border: 1px solid lightgray;
+  border-radius: 20px;
+  display: flex;
+  padding-left: 15px;
+  color: gray; 
+  width: 500px;
+  height: 40px;
+  outline: none;
+  margin: 20px auto;
+}
+.createVideo__postButton{
+  width: 250px;
+  height: 50px;
+  font-size: 20px;
+  color: white;
+  background-color: #0074b1;
+  border-radius: 5px;
+  outline: none;
+  border:1px solid lightgray;
+}
+.createVideo__postButton:hover {
+  background-color: white;
+  color: #0074b1;
+  transition: all 0.5s linear;
+}
+.createVideo__cancelButton {
+  width: 250px;
+  height: 50px;
+  font-size: 20px;
+  background-color: white;
+  color: #0074b1;
+  border-radius: 5px;
+  outline: none;
+  border:1px solid lightgray;
+}
+
+.createVideo__cancelButton:hover {
+  color: white;
+  background-color: #0074b1;
+  transition: all 0.5s linear;
+}
+
+.createVideo__title {
+  padding: 15px;
+}

@@ -11,7 +11,7 @@ import { useSelector } from "react-redux";
 import { auth } from "./firebase";
 
 const Post = forwardRef(
-	({ name, description, message, photoURL, imageUrl }, ref) => {
+	({ name, description, message, photoURL, imageUrl, videoUrl }, ref) => {
 		// const user = useSelector((state) => state.user.user);
 		const [selectedUser, setSelectedUser] = useState({});
 
@@ -30,6 +30,13 @@ const Post = forwardRef(
 					<div className="post__imageWrapper">
 						{imageUrl ? (
 							<img src={imageUrl} alt="image" className="post__imgShowed" />
+						) : null}
+					</div>
+					<div className="post__videoWrapper">
+						{videoUrl ? (
+							<video width="320" height="240" controls>
+								<source src={videoUrl} type="video/mp4"></source>
+							</video>
 						) : null}
 					</div>
 				</div>

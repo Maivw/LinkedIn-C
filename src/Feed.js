@@ -13,6 +13,7 @@ import { useSelector } from "react-redux";
 import FlipMove from "react-flip-move";
 import CreateAPost from "./CreateAPost";
 import CreartePostWithImage from "./CreartePostWithImage";
+import CreatePostVideo from "./CreatePostVideo";
 
 function Feed() {
 	const [posts, setPosts] = useState([]);
@@ -21,6 +22,7 @@ function Feed() {
 	const user = useSelector((state) => state.user.user);
 	const [open, setOpen] = useState(false);
 	const [openPostImage, setOpenPostImage] = useState(false);
+	const [openPostVideo, setOpenPostVideo] = useState(false);
 
 	const closeModal = (val) => {
 		setOpen(val);
@@ -65,7 +67,17 @@ function Feed() {
 						open={openPostImage}
 						onCloseModal={(val) => setOpenPostImage(val)}
 					/>
-					<InputOption Icon={SubscriptionsIcon} title="Video" color="#e7a33e" />
+					<div onClick={() => setOpenPostVideo(true)}>
+						<InputOption
+							Icon={SubscriptionsIcon}
+							title="Video"
+							color="#e7a33e"
+						/>
+					</div>
+					<CreatePostVideo
+						open={openPostVideo}
+						onCloseModal={(val) => setOpenPostVideo(val)}
+					/>
 					<InputOption Icon={EventNoteIcon} title="Event" color="#c0cbcd" />
 					<InputOption
 						Icon={CalendarTodayIcon}
@@ -76,13 +88,17 @@ function Feed() {
 			</div>
 			<FlipMove>
 				{posts?.map(
-					({ id, data: { name, desciption, message, photoURL, imageUrl } }) => (
+					({
+						id,
+						data: { name, desciption, message, photoURL, imageUrl, videoUrl },
+					}) => (
 						<Post
 							key={id}
 							name={name}
 							description={desciption}
 							photoURL={photoURL}
 							message={message}
+							videoUrl={videoUrl}
 							imageUrl={imageUrl}
 						/>
 					)
