@@ -8,7 +8,6 @@ import firebase from "firebase";
 import "./CreateApost.css";
 
 function CreateAPost({ open, onCloseModal }) {
-	console.log("checkopen", open);
 	const [input, setInput] = useState("");
 	const user = useSelector((state) => state.user.user);
 	const sendPost = (e) => {
@@ -40,18 +39,18 @@ function CreateAPost({ open, onCloseModal }) {
 
 				<DialogActions style={{ display: "flex" }}>
 					<button
+						className="createPost__title-cancel"
+						onClick={() => onCloseModal(!open)}
+					>
+						Cancel
+					</button>
+					<button
 						className="createPost__title-post"
 						button
 						onClick={sendPost}
 						type="submit"
 					>
 						Post
-					</button>
-					<button
-						className="createPost__title-cancel"
-						onClick={() => onCloseModal(!open)}
-					>
-						Cancel
 					</button>
 				</DialogActions>
 			</Dialog>

@@ -1,0 +1,85 @@
+.createImage__form {
+  padding: 50px;
+}
+.createImage__fileButton {
+  width: 365px;
+  height: 50px;
+  color: white;
+  background-color: transparent;
+  border-radius: 5px;
+  outline: none;
+}
+.createImage__button , .createImage__postButton{
+  width: 250px;
+  height: 50px;
+  font-size: 20px;
+  color: white;
+  background-color: #0074b1;
+  border-radius: 5px;
+  outline: none;
+  border:1px solid lightgray;
+}
+.createImage__button  {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  color: white;
+  
+}
+.createImage__button:hover , .createImage__postButton:hover{
+  background-color: white;
+  color: #0074b1;
+  transition: all 0.5s linear;
+}
+.createImage__cancelButton {
+  width: 250px;
+  height: 50px;
+  font-size: 20px;
+  background-color: white;
+  color: #0074b1;
+  border-radius: 5px;
+  outline: none;
+  border:1px solid lightgray;
+}
+.createImage__cancelButton:hover {
+ color: white;
+ background-color: #0074b1;
+ transition: all 0.5s linear;
+}
+
+.createImage__buttons {
+  display: flex;
+  justify-content: space-evenly;
+}
+.createImage__input {
+  border: 1px solid lightgray;
+  border-radius: 20px;
+  padding: 10px;
+  color: gray; 
+  width: 500px;
+  height: 20px;
+  margin-bottom: 20px;
+  margin-top: -10px;
+  outline: none;
+  
+}
+::-webkit-file-upload-button {
+  background:whitesmoke;
+  color: black;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid lightgray;
+  outline: none;
+}
+::-webkit-file-upload-button:hover {
+  background:lightgray;
+}
+
+.createPost__imgShow {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  position: absolute;
+  bottom: 25%;
+  left: 85%;
+}

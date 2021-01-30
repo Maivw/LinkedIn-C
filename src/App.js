@@ -11,6 +11,7 @@ import Widgets from "./Widgets";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import User from "./User";
 import Home from "./Home";
+import CreartePostWithImage from "./CreartePostWithImage";
 
 function App() {
 	const user = useSelector((state) => state.user.user);
@@ -35,6 +36,7 @@ function App() {
 	return (
 		<BrowserRouter>
 			<div className="app">
+				<CreartePostWithImage />
 				<Switch>
 					<Route exact path="/" component={Home} />
 					<Route exact path="/users/:uid" component={User} />

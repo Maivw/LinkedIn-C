@@ -1,4 +1,5 @@
 import firebase from "firebase";
+import "firebase/storage";
 const firebaseConfig = {
 	apiKey: "AIzaSyBBq1S33ZtdPyRiepp24hJtz9FxWNhjvA8",
 	authDomain: "linkedin-c-942cf.firebaseapp.com",
@@ -11,5 +12,6 @@ const firebaseConfig = {
 const firebaseApp = firebase.initializeApp(firebaseConfig);
 const db = firebaseApp.firestore();
 const auth = firebase.auth();
+const storage = firebase.storage();
 
-export { auth, db };
+export { auth, db, storage };

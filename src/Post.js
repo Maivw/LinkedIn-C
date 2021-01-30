@@ -10,31 +10,46 @@ import ShareOutlinedIcon from "@material-ui/icons/ShareOutlined";
 import { useSelector } from "react-redux";
 import { auth } from "./firebase";
 
-const Post = forwardRef(({ name, description, message, photoURL }, ref) => {
-	// const user = useSelector((state) => state.user.user);
-	const [selectedUser, setSelectedUser] = useState({});
+const Post = forwardRef(
+	({ name, description, message, photoURL, imageUrl }, ref) => {
+		// const user = useSelector((state) => state.user.user);
+		const [selectedUser, setSelectedUser] = useState({});
 
-	return (
-		<div ref={ref} className="post">
-			<div className="post__header">
-				<Avatar src={photoURL}>{name[0]}</Avatar>
+		return (
+			<div ref={ref} className="post">
+				<div className="post__header">
+					<Avatar src={photoURL}>{name[0]}</Avatar>
 
-				<div className="post__info">
-					<h2> {name}</h2>
-					<p className="post__description">{description}</p>
+					<div className="post__info">
+						<h2> {name}</h2>
+						<p className="post__description">{description}</p>
+					</div>
+				</div>
+				<div className="post__body">
+					<p>{message}</p>
+					<div className="post__imageWrapper">
+						{imageUrl ? (
+							<img src={imageUrl} alt="image" className="post__imgShowed" />
+						) : null}
+					</div>
+				</div>
+				<div className="post__button">
+					<InputOption
+						Icon={ThumbUpAltOutlinedIcon}
+						title="Like"
+						color="gray"
+					/>
+					<InputOption
+						Icon={CommentOutlinedIcon}
+						title="Comment"
+						color="gray "
+					/>
+					<InputOption Icon={ShareOutlinedIcon} title="Share" color="gray" />
+					<InputOption Icon={SendOutlinedIcon} title="Send" color="gray" />
 				</div>
 			</div>
-			<div className="post__body">
-				<p>{message}</p>
-			</div>
-			<div className="post__button">
-				<InputOption Icon={ThumbUpAltOutlinedIcon} title="Like" color="gray" />
-				<InputOption Icon={CommentOutlinedIcon} title="Comment" color="gray " />
-				<InputOption Icon={ShareOutlinedIcon} title="Share" color="gray" />
-				<InputOption Icon={SendOutlinedIcon} title="Send" color="gray" />
-			</div>
-		</div>
-	);
-});
+		);
+	}
+);
 
 export default Post;
